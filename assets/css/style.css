@@ -1,0 +1,159 @@
+/* Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset with Universal Selector */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for all the screen sizes
+Here is no Media Queries because have used absolute unit(px) for width */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9c9c9;
+}
+
+.mainTitle {
+  margin-bottom: 1rem;
+  font-size: 23px;
+  font-weight: 500;
+  color: #123;
+}
+
+main {
+  width: 330px;
+}
+
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.userInput {
+  width: 90%;
+  height: 30px;
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  box-shadow: -2px 2px 5px #123;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 500ms;
+}
+
+.userInput:focus {
+  box-shadow: 0px 0px 5px #123, inset 0px -3px 0px #123;
+}
+
+.btnAdd {
+  width: 90%;
+  height: 29px;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  background-color: #123;
+  color: #c9c9c9;
+  font-weight: 600;
+  border: 1px solid #123;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btnAdd:hover {
+  background-color: #c9c9c9;
+  color: #123;
+}
+
+.listHolder {
+  height: 65vh;
+  margin-top: 1rem;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  overflow-y: scroll;
+}
+
+.listHolder::-webkit-scrollbar {
+  display: none;
+}
+
+.myTask {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #123;
+  color: white;
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+  cursor: default;
+}
+
+.checkBoxHolder {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completedTask {
+  border: none;
+  outline: none;
+  border: 1px solid #c9c9c9;
+}
+
+.completedTask:checked {
+  accent-color: #123;
+}
+
+.checked {
+  background-color: #1e6f56;
+}
+
+.taskName {
+  width: 63%;
+  padding-left: 0.5rem;
+  font-size: 14px;
+  overflow-x: break-word;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.btnHolder {
+  width: 27%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btnEdit,
+.btnRemove {
+  width: 27px;
+  height: 27px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 17px;
+  background-color: #c9c9c9;
+  color: #123;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
